@@ -68,7 +68,7 @@ const memories = [
         timestamp: new Date(2023, 5, 15),
         coords: [3.4981, 73.5301],
         message: "Our dream honeymoon in the Maldives. Overwater bungalows and crystal clear water. 🏝️",
-        image: "maldives.jpg"
+        image: "images/maldives.jpg"
     },
     {
         location: "Redmond, Washington",
@@ -76,7 +76,7 @@ const memories = [
         timestamp: new Date(2023, 7, 5),
         coords: [47.6740, -122.1215],
         message: "Celebrating our special occasion with cake, balloons, and so much love! 🎂",
-        image: "anniversary_redmond.jpg"
+        image: "images/anniversary_redmond.jpg"
     },
     {
         location: "Portland State University",
@@ -84,7 +84,7 @@ const memories = [
         timestamp: new Date(2023, 8, 25),
         coords: [45.5115, -122.6853],
         message: "Where your Master's journey began! 📚",
-        image: "psu.jpg"
+        image: "images/psu.jpg"
     },
     {
         location: "Grand Canyon National Park",
@@ -92,7 +92,7 @@ const memories = [
         timestamp: new Date(2024, 2, 15),
         coords: [36.2679, -112.3535],
         message: "Standing on the edge of the world. A truly unforgettable sight. 🏞️",
-        image: "grand_canyon.jpg"
+        image: "images/grand_canyon.jpg"
     },
     {
         location: "Antelope Canyon & Horseshoe Bend, AZ",
@@ -100,7 +100,7 @@ const memories = [
         timestamp: new Date(2024, 3, 10),
         coords: [36.8620, -111.3744],
         message: "The glowing walls of Antelope Canyon and the breathtaking drop at Horseshoe Bend. 🏜️",
-        image: "arizona_trip.jpg"
+        image: "images/arizona_trip.jpg"
     },
     {
         location: "Zion National Park, Utah",
@@ -108,7 +108,7 @@ const memories = [
         timestamp: new Date(2024, 3, 15),
         coords: [37.2982, -113.0263],
         message: "Hiking through the majestic canyons of Zion. 🥾",
-        image: "zion.jpg"
+        image: "images/zion.jpg"
     },
     {
         location: "First Anniversary: Cannon Beach, Oregon",
@@ -125,7 +125,7 @@ const memories = [
         timestamp: new Date(2024, 11, 20),
         coords: [28.4724, -81.4690],
         message: "Bringing out our inner kids at Universal! 🎢",
-        image: "universal.jpg"
+        image: "images/universal.jpg"
     },
     {
         location: "Key West, Florida",
@@ -133,7 +133,7 @@ const memories = [
         timestamp: new Date(2025, 0, 5),
         coords: [24.5554, -81.7842],
         message: "Boating and sunset views at the southernmost point. 🛥️",
-        image: "key_west.jpg"
+        image: "images/key_west.jpg"
     },
     {
         location: "Wooden Shoe Tulip Farm, Oregon",
@@ -141,7 +141,7 @@ const memories = [
         timestamp: new Date(2025, 3, 15),
         coords: [45.0805, -122.7025],
         message: "Our annual tradition! Walking through the colorful tulip fields. 🌷",
-        image: "tulips.jpg"
+        image: "images/tulips.jpg"
     },
     {
         location: "Second Anniversary: Heceta Head Lighthouse, OR",
@@ -150,7 +150,7 @@ const memories = [
         coords: [44.1373, -124.1278],
         message: "Our 2nd Anniversary! Coastal views and lighthouse memories. Still 'shore' about us! ⚓❤️",
         image: "images/anniversary_2025.jpg",
-        type: "wedding"
+        type: "images/wedding"
     },
     {
         location: "Yosemite & Sierra Nevada",
@@ -158,7 +158,7 @@ const memories = [
         timestamp: new Date(2025, 6, 12),
         coords: [37.8651, -119.5383],
         message: "Waterfalls and mountains with Daddy and Amma. 🏔️",
-        image: "yosemite.jpg"
+        image: "images/yosemite.jpg"
     },
     {
         location: "Redwoods",
@@ -166,7 +166,7 @@ const memories = [
         timestamp: new Date(2025, 9, 15),
         coords: [41.7558, -124.0301],
         message: "Feeling small among the giants. 🌲",
-        image: "redwoods.jpg"
+        image: "images/redwoods.jpg"
     },
     {
         location: "Haleakalā National Park, Hawaii",
@@ -174,7 +174,7 @@ const memories = [
         timestamp: new Date(2025, 10, 14),
         coords: [20.7204, -156.1552],
         message: "Sunrise above the clouds! One of the most magical moments of our Hawaii trip. 🌋",
-        image: "haleakala.jpg"
+        image: "images/haleakala.jpg"
     },
     {
         location: "Hawaii Volcanoes National Park",
@@ -182,7 +182,7 @@ const memories = [
         timestamp: new Date(2025, 10, 18),
         coords: [19.4291, -155.2569],
         message: "Exploring the raw power of the Island of Hawai'i. 🌋",
-        image: "volcanoes.jpg"
+        image: "images/volcanoes.jpg"
     },
     {
         location: "Maui & Big Island",
@@ -190,7 +190,7 @@ const memories = [
         timestamp: new Date(2025, 10, 20),
         coords: [20.7984, -156.3319],
         message: "Volcanoes and oceans. The best way to end the year! 🏝️",
-        image: "hawaii_2025.jpg"
+        image: "images/hawaii_2025.jpg"
     }
 ];
 
@@ -328,4 +328,5 @@ window.onload = () => {
 setTimeout(() => {
     map.invalidateSize();
 }, 500);
+
 
