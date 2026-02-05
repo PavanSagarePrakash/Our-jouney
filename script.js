@@ -323,3 +323,9 @@ window.onload = () => {
     }, 1500);
 
 };
+
+// Fix for mobile layout rendering
+setTimeout(() => {
+    map.invalidateSize();
+}, 500);
+
