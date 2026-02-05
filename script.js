@@ -59,7 +59,7 @@ const memories = [
         timestamp: new Date(2023, 4, 21),
         coords: [12.3050, 76.6550], 
         message: "The day we said 'I Do'. Happy Anniversary, Varshu! ❤️",
-        image: "images/wedding.jpeg",
+        image: "images/wedding.JPEG",
         type: "wedding"
     },
     {
@@ -321,4 +321,5 @@ window.onload = () => {
             duration: 3 // 3 seconds of smooth gliding
         });
     }, 1500);
+
 };
