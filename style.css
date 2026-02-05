@@ -1,0 +1,112 @@
+:root {
+    --primary-love: #e91e63;
+    --gold: #d4af37;
+    --bg-light: #fdfafb;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-light);
+}
+
+header {
+    height: 80px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 1000;
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    color: var(--primary-love);
+}
+
+.app-container {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+.timeline-sidebar {
+    width: 350px;
+    overflow-y: auto;
+    background: white;
+    border-right: 1px solid #eee;
+    padding: 20px;
+}
+
+#map {
+    flex-grow: 1;
+}
+
+.memory-card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #f0f0f0;
+}
+
+.memory-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-color: var(--primary-love);
+}
+
+.memory-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.memory-card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Custom Popup Styling */
+.custom-popup .leaflet-popup-content-wrapper {
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Celebration Animation */
+@keyframes confetti-fall {
+    0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-love);
+    top: -10px;
+    z-index: 9999;
+    animation: confetti-fall 3s linear forwards;
+}
+
+.year-header {
+    padding: 10px 5px;
+    margin-top: 20px;
+    border-bottom: 2px solid var(--primary-love);
+    color: var(--primary-love);
+}
+
+.year-header h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: 'Dancing Script', cursive;
+}
+
