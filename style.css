@@ -32,6 +32,7 @@ header h1 {
 
 .app-container {
     display: flex;
+    flex-direction: row; /* Desktop default */
     height: calc(100vh - 80px);
 }
 
@@ -110,3 +111,23 @@ header h1 {
     font-family: 'Dancing Script', cursive;
 }
 
+
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column; /* Stack vertically on mobile */
+    }
+
+    .timeline-sidebar {
+        width: 100%; /* Take full width */
+        height: 40%; /* Only take up 40% of the screen height */
+        border-right: none;
+        border-top: 1px solid #eee;
+        order: 2; /* Move sidebar below map */
+    }
+
+    #map {
+        width: 100%;
+        height: 60%; /* Map takes the top 60% */
+        order: 1;
+    }
+}
