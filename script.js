@@ -149,8 +149,8 @@ const memories = [
         timestamp: new Date(2025, 4, 21),
         coords: [44.1373, -124.1278],
         message: "Our 2nd Anniversary! Coastal views and lighthouse memories. Still 'shore' about us! ⚓❤️",
-        image: "images/anniversary_2025.jpg",
-        type: "images/wedding"
+        image: "images/anniversary2.jpg",
+        type: "wedding"
     },
     {
         location: "Yosemite & Sierra Nevada",
@@ -169,20 +169,28 @@ const memories = [
         image: "images/redwoods.jpg"
     },
     {
-        location: "Haleakalā National Park, Hawaii",
+        location: "Mauii, Hawaii",
         date: "November 2025",
         timestamp: new Date(2025, 10, 14),
         coords: [20.7204, -156.1552],
-        message: "Sunrise above the clouds! One of the most magical moments of our Hawaii trip. 🌋",
-        image: "images/haleakala.jpg"
+        message: "Swimming with turtles! One of the most magical moments of our Hawaii trip. 🌋",
+        image: "images/turtles.jpg"
     },
     {
-        location: "Hawaii Volcanoes National Park",
+        location: "Kaanapali, Hawaii",
+        date: "November 2025",
+        timestamp: new Date(2025, 10, 14),
+        coords: [20.7204, -156.1552],
+        message: "Nothing, just beautiful you! ❤️😍😘",
+        image: "images/maui.jpg"
+    },
+    {
+        location: "Mountains of mauii",
         date: "November 2025",
         timestamp: new Date(2025, 10, 18),
         coords: [19.4291, -155.2569],
         message: "Exploring the raw power of the Island of Hawai'i. 🌋",
-        image: "images/volcanoes.jpg"
+        image: "images/haleakala.jpg"
     },
     {
         location: "Maui & Big Island",
@@ -328,5 +336,6 @@ window.onload = () => {
 setTimeout(() => {
     map.invalidateSize();
 }, 500);
+
 
 
